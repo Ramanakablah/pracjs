@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express(); 
-const Port = 7000;
+const Port = 7000 || Process.env;
 
 app.get('/',(req,res)=>{
     res.send('hello there')
