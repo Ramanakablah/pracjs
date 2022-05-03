@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express(); 
-const PORT = 7000 || process.env.PORT;
+const Port = 7000 || process.env.PORT;
 
 app.get('/',(req,res)=>{
     res.send('hello there')
@@ -8,6 +8,6 @@ app.get('/',(req,res)=>{
 
 app.use("/Room1", require('./Room1/Person2'))
 
-app.listen(PORT,()=>{
-    console.log(`listening to app at PORT ${PORT}`);
+app.listen(Port,()=>{
+    console.log(`listening to app at PORT ${Port}`);
 })
